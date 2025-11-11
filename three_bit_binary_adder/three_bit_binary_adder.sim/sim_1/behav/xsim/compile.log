@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workspace/Digital_Hardware_Basics/three_bit_binary_adder/three_bit_binary_adder.srcs/sources_1/new/three_bit_binary_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-311] analyzing module three_bit_binary_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/workspace/Digital_Hardware_Basics/three_bit_binary_adder/three_bit_binary_adder.srcs/sources_1/new/tb_three_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_three_bit_binary_adder
