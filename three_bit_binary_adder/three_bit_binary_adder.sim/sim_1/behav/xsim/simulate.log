@@ -1,4 +1,16 @@
 Time resolution is 1 ps
 Starting 3-bit Adder Testbench...
+tb_a & tb_b: 0 0
+tb_sum =0
+tb_cout =0
+tb_a & tb_b: 3 2
+tb_sum =5
+tb_cout =0
+tb_a & tb_b: 5 3
+tb_sum =1
+tb_cout =1
+tb_a & tb_b: 7 7
+tb_sum =7
+tb_cout =1
 All test cases complete. Finishing simulation.
-$finish called at time : 40 ns : File "C:/workspace/Digital_Hardware_Basics/three_bit_binary_adder/three_bit_binary_adder.srcs/sources_1/new/tb_three_bit.v" Line 77
+$finish called at time : 80 ns : File "C:/workspace/Digital_Hardware_Basics/three_bit_binary_adder/three_bit_binary_adder.srcs/sources_1/new/tb_three_bit.v" Line 89

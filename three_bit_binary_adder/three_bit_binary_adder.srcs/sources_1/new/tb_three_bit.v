@@ -46,23 +46,32 @@ module tb_three_bit_binary_adder;
         tb_a = 3'b000;    // Set 3-bit 'a' to 000
         tb_b = 3'b000;    // Set 3-bit 'b' to 000
         tb_c_in = 1'b0;   // Set 1-bit 'c_in' to 0
-        #10 ;              // Wait 10 nanoseconds for the logic to settle
-
+       
+        #20 ;              // Wait 10 nanoseconds for the logic to settle
+        $display("tb_a & tb_b: ",tb_a, " ",tb_b);
+        $display("tb_sum =", tb_sum);
+        $display("tb_cout =", tb_c_out);
+        
         // Test Case 2: 3 + 2, with carry-in = 0
         // 3'b011 + 3'b010 = 5 (3'b101).
         // Expected: sum = 5 (101), carry = 0
         tb_a = 3'b011;
         tb_b = 3'b010;
         tb_c_in = 1'b0;
-        #10 ;              // Wait 10 ns
-
+        #20 ;              // Wait 10 ns
+        $display("tb_a & tb_b: ",tb_a, " ",tb_b);
+        $display("tb_sum =", tb_sum);
+        $display("tb_cout =", tb_c_out);
         // Test Case 3: 5 + 3, with carry-in = 1
         // 5 (3'b101) + 3 (3'b011) + 1 = 9 (4'b1001)
         // Expected: sum = 1 (001), carry = 1
         tb_a = 3'b101;
         tb_b = 3'b011;
         tb_c_in = 1'b1;
-        #10 ;              // Wait 10 ns
+        #20 ;              // Wait 10 ns
+        $display("tb_a & tb_b: ",tb_a, " ",tb_b);
+        $display("tb_sum =", tb_sum);
+        $display("tb_cout =", tb_c_out);
 
         // Test Case 4: Full roll-over (7 + 7 + 1)
         // 7 (3'b111) + 7 (3'b111) + 1 = 15 (4'b1111)
@@ -70,8 +79,11 @@ module tb_three_bit_binary_adder;
         tb_a = 3'b111;
         tb_b = 3'b111;
         tb_c_in = 1'b1;
-        #10 ;              // Wait 10 ns
-
+        #20 ;              // Wait 10 ns
+        $display("tb_a & tb_b: ",tb_a, " ",tb_b);
+        $display("tb_sum =", tb_sum);
+        $display("tb_cout =", tb_c_out);
+        
         $display("All test cases complete. Finishing simulation.");
         
         $finish; // Tell the simulator to stop.
